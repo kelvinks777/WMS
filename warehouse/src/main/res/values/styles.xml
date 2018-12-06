@@ -1,0 +1,112 @@
+<resources>
+
+    <style name="ThemeOverlay.AppAccent" parent="ThemeOverlay.AppCompat">
+        <item name="colorAccent">@color/colorClickable</item>
+    </style>
+
+    <style name="ThemeOverlay.RealAppAccent" parent="ThemeOverlay.AppCompat">
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="ThemeOverlay.DisabledAppAccent" parent="ThemeOverlay.AppCompat">
+        <item name="colorAccent">@color/colorClickableDisabled</item>
+    </style>
+
+    <style name="ThemeOverlay.GoogleAccent" parent="ThemeOverlay.AppCompat">
+        <item name="colorAccent">@color/colorSolidOnTheDark</item>
+    </style>
+
+    <style name="ThemeOverlay.FacebookAccent" parent="ThemeOverlay.AppCompat">
+        <item name="colorAccent">@color/facebookBlue</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="actionMenuTextColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="actionMenuTextColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="NavDrawerTextStyle" parent="AppTheme.NoActionBar">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/font_subtitle</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/fade_in</item>
+        <item name="android:windowExitAnimation">@anim/fade_out</item>
+    </style>
+
+    <style name="RightChevronButton" parent="Base.Widget.AppCompat.Button.Colored">
+        <item name="android:theme">@style/ThemeOverlay.AppAccent</item>
+        <item name="android:textColor">@color/colorSolidOnTheDark</item>
+        <item name="android:textSize">@dimen/font_button_dp</item>
+        <item name="android:drawableEnd">@drawable/ic_chevron_right_white_24dp</item>
+        <item name="android:drawablePadding">4dp</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="CommonButton" parent="Base.Widget.AppCompat.Button.Colored">
+        <item name="android:theme">@style/ThemeOverlay.AppAccent</item>
+        <item name="android:textColor">@color/colorSolidOnTheDark</item>
+        <item name="android:textSize">@dimen/font_subheading</item>
+    </style>
+
+    <style name="CommonAccentButton" parent="Base.Widget.AppCompat.Button.Colored">
+        <item name="android:theme">@style/ThemeOverlay.RealAppAccent</item>
+        <item name="android:textColor">@color/colorSolidOnTheDark</item>
+        <item name="android:textSize">@dimen/font_subheading</item>
+    </style>
+
+    <style name="CommonDisabledButton" parent="Base.Widget.AppCompat.Button.Colored">
+        <item name="android:theme">@style/ThemeOverlay.DisabledAppAccent</item>
+        <item name="android:textColor">@color/colorSolidOnTheDark</item>
+        <item name="android:textSize">@dimen/font_subheading</item>
+    </style>
+
+    <style name="LoginEmailButton" parent="Base.Widget.AppCompat.Button.Colored">
+        <item name="android:theme">@style/ThemeOverlay.AppAccent</item>
+        <item name="android:textColor">@color/colorSolidOnTheDark</item>
+        <item name="android:textSize">@dimen/font_button_dp</item>
+        <item name="android:drawableStart">@drawable/ic_email_32</item>
+        <item name="android:drawablePadding">4dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:text">@string/lanjutkan_dengan_email</item>
+    </style>
+
+    <style name="LoginGoogleButton" parent="Base.Widget.AppCompat.Button.Colored">
+        <item name="android:theme">@style/ThemeOverlay.GoogleAccent</item>
+        <item name="android:textColor">@color/colorDimGrey</item>
+        <item name="android:textSize">@dimen/font_button_dp</item>
+        <item name="android:drawableStart">@drawable/ic_google_32</item>
+        <item name="android:drawablePadding">4dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:text">@string/lanjutkan_dengan_google</item>
+    </style>
+
+    <style name="LoginFacebookButton" parent="Base.Widget.AppCompat.Button.Colored">
+        <item name="android:theme">@style/ThemeOverlay.FacebookAccent</item>
+        <item name="android:textColor">@color/colorSolidOnTheDark</item>
+        <item name="android:textSize">@dimen/font_button_dp</item>
+        <item name="android:drawableStart">@drawable/ic_facebook_32</item>
+        <item name="android:drawablePadding">4dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:text">@string/lanjutkan_dengan_facebook</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

@@ -1,0 +1,95 @@
+{
+  "project_info": {
+    "project_number": "373658811792",
+    "firebase_url": "https://ng-wms.firebaseio.com",
+    "project_id": "ng-wms",
+    "storage_bucket": "ng-wms.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:373658811792:android:74843a946a799972",
+        "android_client_info": {
+          "package_name": "com.gin.wms.warehouse"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "373658811792-9rj8s7c5d7r38ga2ka35ael94f50futr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gin.wms.warehouse",
+            "certificate_hash": "9727198bbbe450334a553147d481cfaf8a572bcb"
+          }
+        },
+        {
+          "client_id": "373658811792-rnmni3ugt0vsp66k0bp2iduvau4ma81h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gin.wms.warehouse",
+            "certificate_hash": "6ebd626307cfee53bb7fe460c1c04faebb85a6db"
+          }
+        },
+        {
+          "client_id": "373658811792-2t8atvc0u6ki0ivrp9ndffag21be369a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gin.wms.warehouse",
+            "certificate_hash": "6b7d292cba0709888850317f7f986c8972600b72"
+          }
+        },
+        {
+          "client_id": "373658811792-gurop4vocu2advdjktbfpqdnj7tnh9te.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gin.wms.warehouse",
+            "certificate_hash": "db4ac07ef470e2d2bb0545a82089c47ed62558e9"
+          }
+        },
+        {
+          "client_id": "373658811792-db481evssokrmp4e7cnsp4pcj552ddkb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gin.wms.warehouse",
+            "certificate_hash": "d1392aee17ddaa60214d05117e34c1c17fb23eb8"
+          }
+        },
+        {
+          "client_id": "373658811792-tppo657clma1vvghvmuj5jf1g2p9cc0c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gin.wms.warehouse",
+            "certificate_hash": "bfe79730825715ab02809fd135edfbd51080779f"
+          }
+        },
+        {
+          "client_id": "373658811792-e09aru2vvlu8msn45b91eh37tsbcqsla.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIDETVL8SytLx_5yooekT6mCfCxBq5eCA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "373658811792-e09aru2vvlu8msn45b91eh37tsbcqsla.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

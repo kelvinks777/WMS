@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gin.wms.warehouse.operator.Docking.MoveToDockingItemCard
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:gravity="center_vertical|start"
+                    android:text="Product"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="@dimen/font_subheading" />
+
+                <TextView
+                    android:id="@+id/tvProductName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.65"
+                    android:gravity="start|center_vertical"
+                    android:textColor="@color/colorSecondaryText"
+                    android:textSize="@dimen/font_subheading"
+                    tools:text="Buku Gambar" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_weight="0.3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Expired Date"
+                    android:gravity="center_vertical|start"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="@dimen/font_subheading" />
+
+
+                <TextView
+                    android:layout_weight="0.65"
+                    android:id="@+id/tvExpiredDate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="start|center_vertical"
+                    android:textSize="@dimen/font_subheading"
+                    android:textColor="@color/colorSecondaryText"
+                    tools:text="20 Feb 2018" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp">
+
+                <com.gin.wms.warehouse.component.CompUomInterpreter
+                    android:id="@+id/compUomInterpreter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</com.gin.wms.warehouse.operator.Docking.MoveToDockingItemCard>

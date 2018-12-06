@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_custom_scanner"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".component.CustomScannerActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tbCustomScanner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary"
+        android:elevation="6dp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <com.bosnet.ngemart.libgen.barcode_scanner.DecoratedBarcodeView
+        android:id="@+id/zxing_barcode_scanner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:zxing_use_texture_view="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/zxing_barcode_scanner"
+        android:layout_alignBottom="@+id/zxing_barcode_scanner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="8dp" />
+
+    <FrameLayout
+        android:id="@+id/btnFlashLightContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/flashlight_btn_bg">
+
+        <Button
+            android:id="@+id/btnEnableFlashLight"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="@string/btn_flashlight_on_label"
+            android:textColor="@android:color/white" />
+
+    </FrameLayout>
+
+</RelativeLayout>

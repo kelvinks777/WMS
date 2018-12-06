@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gin.wms.warehouse.checker.CheckerTaskDetailCard xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardHistoryDetail"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardElevation="2dp"
+    app:cardUseCompatPadding="true">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/llFirst"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvProductName"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/font_subheading"
+                        android:textStyle="bold"
+                        tools:text="Starbucks Frappucino" />
+                    <TextView
+                        android:id="@+id/tvCheckedInfo"
+                        android:layout_weight="0.2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_subheading"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:background="@color/colorClickable"/>
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_weight="0.4"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/client_id"
+                            android:textSize="@dimen/font_body"
+                            android:textColor="@color/colorPrimaryText"/>
+
+                        <TextView
+                            android:id="@+id/tvClientId"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.6"
+                            android:textSize="@dimen/font_body"
+                            android:layout_marginStart="5dp"
+                            tools:text="SNS"
+                            android:textColor="@color/colorSecondaryText"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_weight="0.6"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/client_location_id"
+                            android:textColor="@color/colorPrimaryText"
+                            android:textSize="@dimen/font_body" />
+
+                        <TextView
+                            android:id="@+id/tvClientLocationId"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.4"
+                            android:textSize="@dimen/font_body"
+                            android:layout_marginStart="5dp"
+                            tools:text="AX001"
+                            android:textColor="@color/colorSecondaryText"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_weight="0.4"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Uom Id"
+                            android:textSize="@dimen/font_body"
+                            android:textColor="@color/colorPrimaryText"/>
+
+                        <TextView
+                            android:id="@+id/tvCompUom"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.6"
+                            android:textSize="@dimen/font_body"
+                            android:layout_marginStart="5dp"
+                            tools:text="2x"
+                            android:textColor="@color/colorSecondaryText"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_weight="0.6"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/pallet_conversion"
+                            android:textColor="@color/colorPrimaryText"
+                            android:textSize="@dimen/font_body" />
+
+                        <TextView
+                            android:id="@+id/tvPalletConversion"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.4"
+                            android:textSize="@dimen/font_body"
+                            android:layout_marginStart="5dp"
+                            tools:text="2x"
+                            android:textColor="@color/colorSecondaryText"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_weight="0.4"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/qty"
+                            android:textSize="@dimen/font_body"
+                            android:textColor="@color/colorPrimaryText"/>
+
+                        <TextView
+                            android:id="@+id/tvQty"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.6"
+                            android:textSize="@dimen/font_body"
+                            android:layout_marginStart="5dp"
+                            tools:text="2x"
+                            android:textColor="@color/colorSecondaryText"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_weight="0.6"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/pallet_qty"
+                            android:textColor="@color/colorPrimaryText"
+                            android:textSize="@dimen/font_body" />
+
+                        <TextView
+                            android:id="@+id/tvPalletQty"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.4"
+                            android:textSize="@dimen/font_body"
+                            android:layout_marginStart="5dp"
+                            tools:text="2x"
+                            android:textColor="@color/colorSecondaryText"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimary"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_weight="0.4"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/good_qty_check_result"
+                            android:textSize="@dimen/font_body"
+                            android:textColor="@color/colorPrimaryText"/>
+
+                        <TextView
+                            android:id="@+id/tvGoodQty"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.6"
+                            android:textSize="@dimen/font_body"
+                            android:layout_marginStart="5dp"
+                            tools:text="2x"
+                            android:textColor="@color/colorTextTitleValueChange" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_weight="0.6"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/total_pallet_2"
+                            android:textColor="@color/colorPrimaryText"
+                            android:textSize="@dimen/font_body" />
+
+                        <TextView
+                            android:id="@+id/tvPalletResult"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.4"
+                            android:textSize="@dimen/font_body"
+                            android:layout_marginStart="5dp"
+                            tools:text="2x"
+                            android:textColor="@color/colorTextTitleValueChange"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_weight="0.4"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/bad_qty_check_result"
+                            android:textSize="@dimen/font_body"
+                            android:textColor="@color/colorPrimaryText"/>
+
+                        <TextView
+                            android:id="@+id/tvBadQty"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.6"
+                            android:textSize="@dimen/font_body"
+                            android:layout_marginStart="5dp"
+                            tools:text="2x"
+                            android:textColor="@color/colorAlert" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:orientation="horizontal">
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/vw"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:background="@color/separatorBackground"
+            android:visibility="gone"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/llFirst" />
+
+        <Button
+            android:id="@+id/btnPutaway"
+            style="@style/CommonButton"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:text="Putaway"
+            android:textSize="@dimen/font_body"
+            android:visibility="gone"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/vw" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</com.gin.wms.warehouse.checker.CheckerTaskDetailCard>

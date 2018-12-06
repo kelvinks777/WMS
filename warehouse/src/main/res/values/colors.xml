@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryLight">#C5CAE9</color>
+    <color name="colorPrimaryText">#212121</color>
+    <color name="colorSecondaryText">#757575</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="divider">#BDBDBD</color>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorPrimaryVeryDark">#1b245b</color>
+    <color name="colorAccent">#FF5722</color>
+    <color name="colorYellow">#ffff00</color>
+    <color name="secondaryBackground">#eeeeee</color>
+    <color name="mainBackground">#eeeeee</color>
+    <color name="separatorBackground">#ede9de</color>
+
+    <color name="colorStatusBar">#e6842d</color>
+
+    <color name="colorSpinner">#499b48</color>
+    <color name="colorClickable">#55b853</color>
+    <color name="colorClickableRipple">#5dc95b</color>
+    <color name="colorClickableDisabled">#d4d1d1</color>
+
+    <color name="colorButtonGoogleSignBorder">#4cf8ca</color>
+
+    <color name="colorTextTitleValueChange">#7f0099</color>
+    <color name="colorTextTitleAccent">#11b387</color>
+    <color name="colorTextSubTitleAccent">#5fe1b6</color>
+    <color name="colorAccentAlternative">#0595fc</color>
+
+    <color name="facebookBlue">#3b5998</color>
+
+    <color name="colorDimGrey">#696969</color>
+
+    <color name="ngTransparent">#00000000</color>
+    <color name="colorTransparentWhite">#73ffffff</color>
+
+    <color name="colorTextSubTitleOnDark">#d4d1d1</color>
+
+    <color name="colorTextTitleLight">#383f9e</color>
+    <color name="colorSubTextTitleLight">#97b2e9</color>
+
+    <color name="colorAlert">#ea0337</color>
+    <color name="colorAlertPressed">#ff1e00</color>
+    <color name="colorButtonFlagRed">#FF0007</color>
+
+    <color name="colorSolidOnTheDark">#d6f7f6</color>
+    <color name="colorSolidOnTheLight">#000000</color>
+    <color name="textGlowOnDark">#99b3ff</color>
+    <color name="blackOverlay">#44000000</color>
+    <color name="blackOverlayWithContent">#af000000</color>
+    <color name="redOverlayWithContent">#eeea0337</color>
+</resources>

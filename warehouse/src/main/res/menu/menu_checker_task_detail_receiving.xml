@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".checker.CheckerTaskDetailActivity">
+    <item
+        android:id="@+id/actUpdateFSidDetail"
+        android:orderInCategory="1"
+        android:title="Update FSid"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/actMovingToStaging"
+        android:orderInCategory="2"
+        android:title="Moving to staging"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/actReleaseOperator"
+        android:orderInCategory="3"
+        android:title="Release operator"
+        app:showAsAction="never" />
+</menu>

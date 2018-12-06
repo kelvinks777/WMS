@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".operator.Picking.PickingTaskActivity"
+    android:background="@color/secondaryBackground">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/parentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        tools:context="com.gin.wms.warehouse.security.ReceivingVehicleActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardViewBarcode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="2dp"
+                tools:layout_editor_absoluteX="21dp"
+                tools:layout_editor_absoluteY="307dp"
+                android:layout_marginTop="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/tvLocation"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight="0.25"
+                        android:gravity="center_vertical|start"
+                        android:text="@string/source_location"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/font_subheading" />
+
+                    <EditText
+                        android:id="@+id/txtId"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.25"
+                        android:background="@android:color/transparent"
+                        android:enabled="false"
+                        android:textSize="@dimen/font_subheading"
+                        android:gravity="start|center"
+                        android:textColor="@color/colorSecondaryText"/>
+
+                    <EditText
+                        android:id="@+id/txtBarcode"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.35"
+                        android:gravity="center"
+                        android:textSize="@dimen/font_subheading"
+                        android:hint="@string/input_barcode"
+                        android:inputType="textCapCharacters"
+                        android:maxLength="10"
+                        android:focusable="false"
+                        android:selectAllOnFocus="false"
+                        android:textColor="@color/colorSecondaryText"
+                        android:backgroundTint="@color/colorClickableRipple"/>
+
+                    <ImageButton
+                        android:id="@+id/imgBtnBarcode"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="0.15"
+                        android:tint="@android:color/white"
+                        android:backgroundTint="@color/colorClickableRipple"
+                        android:src="@drawable/ic_qrcode_48_black" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardProduct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight="0.25"
+                        android:gravity="center_vertical|start"
+                        android:text="@string/product_name"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/font_subheading" />
+
+                    <EditText
+                        android:id="@+id/txtProductName"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.75"
+                        android:ellipsize="end"
+                        android:enabled="false"
+                        android:gravity="start|center"
+                        android:textSize="@dimen/font_subheading"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardPalletNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight="0.25"
+                        android:gravity="center_vertical|start"
+                        android:text="@string/pallet_no"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/font_subheading" />
+
+                    <EditText
+                        android:id="@+id/txtPalletNumber"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.75"
+                        android:ellipsize="end"
+                        android:enabled="false"
+                        android:gravity="start|center"
+                        android:textSize="@dimen/font_subheading"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardExpDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight="0.25"
+                        android:gravity="center_vertical|start"
+                        android:text="@string/expired_date"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/font_subheading" />
+
+                    <EditText
+                        android:id="@+id/txtExpiredDate"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.75"
+                        android:enabled="false"
+                        android:gravity="start|center"
+                        android:textSize="@dimen/font_subheading"/>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardUomQty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                app:cardCornerRadius="0dp"
+                app:cardElevation="2dp"
+                app:cardUseCompatPadding="true">
+
+                <com.gin.wms.warehouse.component.CompUomInterpreter
+                    android:id="@+id/compUomInterpreter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+        <Button
+            android:id="@+id/btnReport"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_above="@+id/btnNextPicking"
+            android:layout_centerHorizontal="true"
+            style="@style/CommonButton"
+            android:padding="10dp"
+            android:text="REPORT"
+            android:textColor="@android:color/white"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/btnNextPicking"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            style="@style/CommonButton"
+            android:padding="10dp"
+            android:text="SELANJUTNYA"
+            android:textColor="@android:color/white"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/btnStartPicking"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            style="@style/CommonButton"
+            android:padding="10dp"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnFinishPicking"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            style="@style/CommonButton"
+            android:padding="10dp"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:visibility="gone" />
+
+        <ProgressBar
+            android:id="@+id/spinnerPickingTask"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:gravity="center_vertical|end"
+            android:text="Product"
+            android:textColor="@color/colorTextTitleLight"
+            android:textSize="@dimen/font_subtitle" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainBackground"
+    tools:context="com.gin.wms.warehouse.checker.CheckResultInputActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+        <com.gin.ngemart.baseui.NgemartSwipeRefresh
+            android:id="@+id/swipeRefresh"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/llDetail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Detail"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/font_subtitle"
+                        android:textStyle="bold" />
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/cvDetail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="0dp"
+                        app:cardElevation="2dp"
+                        app:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:paddingBottom="8dp"
+                            android:paddingTop="8dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="90dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="8dp"
+                                    android:layout_marginLeft="16dp"
+                                    android:layout_marginRight="8dp"
+                                    android:layout_marginStart="16dp"
+                                    android:gravity="end|center_vertical"
+                                    android:text="@string/police_no"
+                                    android:textAlignment="textEnd"
+                                    android:textColor="@color/colorPrimaryText"
+                                    android:textSize="@dimen/font_subheading" />
+
+                                <TextView
+                                    android:id="@+id/tvPoliceNo"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="7.5dp"
+                                    android:layout_weight="7.5"
+                                    android:gravity="start"
+                                    android:textSize="@dimen/font_subheading"
+                                    tools:text="B1234JSK"
+                                    android:textColor="@color/colorSecondaryText"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="90dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="8dp"
+                                    android:layout_marginLeft="16dp"
+                                    android:layout_marginRight="8dp"
+                                    android:layout_marginStart="16dp"
+                                    android:gravity="end|center_vertical"
+                                    android:text="@string/product_id"
+                                    android:textAlignment="textEnd"
+                                    android:textColor="@color/colorPrimaryText"
+                                    android:textSize="@dimen/font_subheading" />
+
+                                <TextView
+                                    android:id="@+id/tvProductId"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="7.5dp"
+                                    android:layout_weight="7.5"
+                                    android:gravity="start"
+                                    android:textSize="@dimen/font_subheading"
+                                    tools:text="PD0001"
+                                    android:textColor="@color/colorSecondaryText"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="90dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="8dp"
+                                    android:layout_marginLeft="16dp"
+                                    android:layout_marginRight="8dp"
+                                    android:layout_marginStart="16dp"
+                                    android:gravity="end|center_vertical"
+                                    android:text="@string/product_name"
+                                    android:textAlignment="textEnd"
+                                    android:textColor="@color/colorPrimaryText"
+                                    android:textSize="@dimen/font_subheading" />
+
+                                <TextView
+                                    android:id="@+id/tvProductName"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="7.5dp"
+                                    android:layout_marginStart="7.5dp"
+                                    android:layout_weight="7.5"
+                                    android:gravity="start"
+                                    android:textSize="@dimen/font_subheading"
+                                    tools:text="Buku Tulis"
+                                    android:textColor="@color/colorSecondaryText"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="90dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="8dp"
+                                    android:layout_marginLeft="16dp"
+                                    android:layout_marginRight="8dp"
+                                    android:layout_marginStart="16dp"
+                                    android:gravity="end|center_vertical"
+                                    android:text="@string/client_location_id"
+                                    android:textAlignment="textEnd"
+                                    android:textColor="@color/colorPrimaryText"
+                                    android:textSize="@dimen/font_subheading" />
+
+                                <TextView
+                                    android:id="@+id/tvClientLocationId"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="7.5dp"
+                                    android:layout_marginStart="7.5dp"
+                                    android:layout_weight="7.5"
+                                    android:gravity="start"
+                                    android:textSize="@dimen/font_subheading"
+                                    tools:text="CL01"
+                                    android:textColor="@color/colorSecondaryText"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="90dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="8dp"
+                                    android:layout_marginLeft="16dp"
+                                    android:layout_marginRight="8dp"
+                                    android:layout_marginStart="16dp"
+                                    android:gravity="end|center_vertical"
+                                    android:text="@string/client_id"
+                                    android:textAlignment="textEnd"
+                                    android:textColor="@color/colorPrimaryText"
+                                    android:textSize="@dimen/font_subheading" />
+
+                                <TextView
+                                    android:id="@+id/tvClientId"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="7.5dp"
+                                    android:layout_marginStart="7.5dp"
+                                    android:layout_weight="7.5"
+                                    android:gravity="start"
+                                    android:textSize="@dimen/font_subheading"
+                                    tools:text="XX01"
+                                    android:textColor="@color/colorSecondaryText"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="90dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="8dp"
+                                    android:layout_marginLeft="16dp"
+                                    android:layout_marginRight="8dp"
+                                    android:layout_marginStart="16dp"
+                                    android:gravity="end|center_vertical"
+                                    android:text="@string/comp_uom_id"
+                                    android:textAlignment="textEnd"
+                                    android:textColor="@color/colorPrimaryText"
+                                    android:textSize="@dimen/font_subheading" />
+
+                                <TextView
+                                    android:id="@+id/tvCompUomId"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="7.5dp"
+                                    android:layout_marginStart="7.5dp"
+                                    android:layout_weight="7.5"
+                                    android:gravity="start"
+                                    android:textSize="@dimen/font_subheading"
+                                    tools:text="100"
+                                    android:textColor="@color/colorSecondaryText"/>
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_margin="8dp"
+                                android:background="@color/colorTextTitleLight" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="90dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginEnd="8dp"
+                                    android:layout_marginLeft="16dp"
+                                    android:layout_marginRight="8dp"
+                                    android:layout_marginStart="16dp"
+                                    android:gravity="end|center_vertical"
+                                    android:text="@string/good_qty_check_result"
+                                    android:textAlignment="textEnd"
+                                    android:textColor="@color/colorPrimaryText"
+                                    android:textSize="@dimen/font_subheading" />
+
+                                <TextView
+                                    android:id="@+id/tvGoodQty"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="7.5dp"
+                                    android:layout_marginStart="7.5dp"
+                                    android:layout_weight="7.5"
+                                    android:gravity="start"
+                                    android:textColor="@color/colorTextTitleValueChange"
+                                    android:textSize="@dimen/font_subheading"
+                                    tools:text="100" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="90dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="8dp"
+                                    android:layout_marginLeft="16dp"
+                                    android:layout_marginRight="8dp"
+                                    android:layout_marginStart="16dp"
+                                    android:gravity="end|center_vertical"
+                                    android:text="@string/bad_qty_check_result"
+                                    android:textAlignment="textEnd"
+                                    android:textColor="@color/colorPrimaryText"
+                                    android:textSize="@dimen/font_subheading" />
+
+                                <TextView
+                                    android:id="@+id/tvBadQty"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="7.5dp"
+                                    android:layout_marginStart="7.5dp"
+                                    android:layout_weight="7.5"
+                                    android:gravity="start"
+                                    android:textSize="@dimen/font_subheading"
+                                    android:textColor="@color/colorButtonFlagRed"
+                                    tools:text="100" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Pallet"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/font_subtitle"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <com.gin.ngemart.baseui.adapter.NgemartRecyclerView
+                    android:id="@+id/rvList"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@color/colorTransparentWhite"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/llDetail" />
+
+            </android.support.constraint.ConstraintLayout>
+
+        </com.gin.ngemart.baseui.NgemartSwipeRefresh>
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabAddPallet"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        app:backgroundTint="@color/colorClickable"
+        app:layout_anchorGravity="bottom|end"
+        app:layout_anchor="@+id/cvDetail"
+        android:layout_margin="@dimen/fab_margin"
+        android:tint="@android:color/white"
+        app:srcCompat="@android:drawable/ic_input_add" />
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,12 @@
+[submodule "libgen"]
+	path = libgen
+	url = https://bosnetdis.visualstudio.com/DefaultCollection/Ngemart%20System/_git/Ngemart-Android-LibGen
+	branch = master
+[submodule "baseui"]
+	path = baseui
+	url = https://bosnetdis.visualstudio.com/DefaultCollection/Ngemart%20System/_git/Ngemart-Android-BaseUI
+	branch = master
+[submodule "libsignin"]
+	path = libsignin
+	url = https://bosnetdis.visualstudio.com/DefaultCollection/Ngemart%20System/_git/Ngemart-Android-Signin
+	branch = master

@@ -1,0 +1,5 @@
+<resources>
+    <declare-styleable name="CompUomEditor">
+        <attr name="separator" format="string" />
+    </declare-styleable>
+</resources>

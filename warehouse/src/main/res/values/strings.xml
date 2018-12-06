@@ -1,0 +1,332 @@
+<resources>
+    <string name="app_name">WMS</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+
+    <!--Account Setting-->
+    <string name="fcmSenderId">373658811792</string>
+    <string name="googleClientId">373658811792-e09aru2vvlu8msn45b91eh37tsbcqsla.apps.googleusercontent.com</string>
+    <string name="facebookAppid">1538114246318121</string>
+
+    <!--Common-->
+    <string name="common_confirmation_title">Konfirmasi</string>
+    <string name="common_information_title">Informasi</string>
+    <string name="common_progress_content">Sedang memproses data</string>
+    <string name="common_close_app_confirmation_content">Keluar dari aplikasi?</string>
+    <string name="common_double_tap_for_close">Tekan sekali lagi untuk keluar</string>
+    <string name="common_close_app_progress_content">Keluar aplikasi …</string>
+
+    <!--Login-->
+    <string name="lanjutkan_dengan_email">LANJUTKAN DENGAN EMAIL</string>
+    <string name="lanjutkan_dengan_google">LANJUTKAN DENGAN GOOGLE</string>
+    <string name="lanjutkan_dengan_facebook">LANJUTKAN DENGAN FACEBOOK</string>
+
+    <string name="registration_progress_content">Sedang memproses data registrasi</string>
+    <string name="user_has_not_been_validated">User belum divalidasi</string>
+    <string name="user_not_yet_present">User belum hadir</string>
+
+    <!--Main Menu-->
+    <string name="nav_checker_task">Checker Task</string>
+    <string name="nav_putaway">Putaway</string>
+    <string name="nav_unloading_task">Unloading Task</string>
+    <string name="nav_to_staging">To Staging</string>
+
+    <!-- Task Switcher-->
+    <string name="switcher_no_data_to_process">Tidak ada data yang bisa diproses</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="title_notifications">Prioritas Tinggi</string>
+    <string name="title_activity_checker_main">Checker Main Activity</string>
+    <string name="title_putaway_with_staging">Staging</string>
+    <string name="ask_to_start_put_away">Mulai tugas taruh barang ke rak sekarang ?</string>
+    <string name="ask_to_start_put_away_bad_product">Mulai tugas memindahkan barang rusak sekarang ?</string>
+    <string name="ask_to_start_put_away_per_product">Mulai tugas memindahkan barang satuan sekarang ?</string>
+
+    <string name="btn_flashlight_on_label">Nyalakan Senter</string>
+    <string name="btn_flashlight_off_label">Matikan Senter</string>
+
+    <string name="reassign_not_enough_operator_information">Jumlah operator yang dipilih untuk di-Release adalah 0. Pilih minimal satu untuk di-Release</string>
+    <string name="button_reassign_n_operator">reassign {0} operator</string>
+    <string name="button_release_n_operator">release {0} operator</string>
+    <string name="choose_operator_for_release_content_confirmation">Apakah Anda memilih {0} operator untuk dirilis?</string>
+    <string name="choose_operator_for_moving_to_docking_content_confirmation">Apakah Anda memilih {0} operator untuk moving to docking?</string>
+
+    <!--Constants Checker Task-->
+    <string name="content_new_high_priority_task">Tugas Baru {0} sudah ditambahkan dan tidak ada operator yang tersedia</string>
+    <string name="content_reject_new_high_priority_task">Tugas Baru{0} sudah ditolak</string>
+    <string name="document_number">No. Dokumen</string>
+    <string name="docking_number">No. Docking</string>
+    <string name="staging_number">No. Staging</string>
+    <string name="checker_title_release">Checker Task Detail - Release</string>
+    <string name="checker_title_receive">Checker Task Detail - Receive</string>
+
+    <string name="police_no">No. Polisi</string>
+    <string name="driver_name">Nama Pengemudi</string>
+    <string name="type">Tipe</string>
+    <string name="check_police_number">Cek No. Polisi</string>
+    <string name="category_1">Kategori 1</string>
+    <string name="category_2">Kategori 2</string>
+    <string name="receiving_no">No. Penerimaan</string>
+    <string name="product_id">Id Produk</string>
+    <string name="product_name">Nama Produk</string>
+    <string name="client_id">Id Klien </string>
+    <string name="client_location_id">Id Lokasi Klien  </string>
+    <string name="good_qty_check_result">Qty Bagus  </string>
+    <string name="bad_qty_check_result">Qty Rusak  </string>
+    <string name="expired_date">Kadaluarsa</string>
+    <string name="prefix_police_number">prefix</string>
+    <string name="suffix_police_number">suffix</string>
+
+    <string name="btnContinue">Lanjutkan</string>
+    <string name="btnSave">Simpan</string>
+    <string name="btnOperator">Operator</string>
+    <string name="btnFinish">Selesai</string>
+    <string name="btnFinishMoving">Selesai Moving</string>
+    <string name="btnTakePallet">Ambil Pallet Baru</string>
+    <string name="btnCancel">Batal</string>
+    <string name="btnStart">Mulai</string>
+    <string name="btnReassign">Reassign Operator</string>
+    <string name="btnProcess">Proses</string>
+    <string name="btnEdit">Ubah</string>
+    <string name="btnDelete">Hapus</string>
+    <string name="btnPending">Tunda</string>
+    <string name="btnReAssign">Pilih Ulang Operator</string>
+    <string name="btnChooseOperator">Pilih operator</string>
+    <string name="btnPutAwayProduct">Simpan Produk</string>
+    <string name="btnCheckResult">Cek Hasil</string>
+    <string name="btnDetail">Lihat Detil</string>
+    <string name="btnAdd">Tambah</string>
+    <string name="btnReport">Report</string>
+
+
+
+    <string name="barang">Ambil Barang</string>
+    <string name="put">Taruh Barang</string>
+    <string name="location">Lokasi</string>
+    <string name="scanlocation">Pindai Lokasi</string>
+    <string name="scanpallet">Pindai Pallet</string>
+    <string name="product">Produk</string>
+    <string name="qty">Qty</string>
+    <string name="next">Selanjutnya</string>
+    <string name="right_arrow">>></string>
+    <string name="back">Kembali</string>
+    <string name="input_barcode">Input</string>
+
+    <string name="checker">Checker Id</string>
+    <string name="title_activity_checker_task_detail">Detail Tugas Pemeriksa</string>
+    <string name="title_activity_operator">Operator</string>
+    <string name="title_activity_operator_main">Operator</string>
+    <string name="title_activity_switcher">Switcher</string>
+    <string name="input_barcode_manually">Masukkan Barcode Secara Manual</string>
+
+    ///Receiving Vehicle
+    <string name="receiving_vehicle_title">Penerimaan Kendaraan</string>
+    <string name="receiving_vehicle_note">Perhatian :\nKendaraan ini belum ada didalam sistem.\nHarap daftarkan kendaraan ini untuk dapat membuat Receiving Order.</string>
+    <string name="receiving_vehicle_saving">Menyimpan data kendaraan …</string>
+    <string name="receiving_parkir_area">Memeriksa Tempat Parkir Yang Kosong…</string>
+
+    <string name="receiving_vehicle_successfully_saved">Data kendaraan telah disimpan</string>
+    <string name="comp_uom_default_separator">/</string>
+    <string name="zero_value">0</string>
+    <string name="comp_uom_zero_value">000/000/000</string>
+    <string name="comp_uom_pallet">Pallet</string>
+    <string name="comp_uom_id">Comp Uom Id</string>
+    <string name="warning_data_should_be_filled">Harus diisi</string>
+    <string name="warning_duplicate_with_previous">Data kendaraan ini sama dengan data kendaraan yang sudah disimpan sebelumnya, termasuk dengan nama pengemudi.\nLanjutkan?</string>
+    <string name="choose_type">Pilih Tipe Kendaraan</string>
+    <string name="choose_category">Pilih Kategori Kendaraan</string>
+    <string name="insert_driver_name">Masukkan nama pengemudi</string>
+    <string name="choose_vehicle_type">Pilih Tipe Kendaraan</string>
+
+    //Picking Task
+    <string name="picking_task_title">Picking Task</string>
+    <string name="picking_source_action">Ambil Barang</string>
+    <string name="picking_destination_action">Taruh Barang</string>
+    <string name="start_picking_source_action_text_button">Mulai proses ambil barang</string>
+    <string name="exit_warning">Anda harus menyelesaikan tugas ambil barang dan taruh barang terlebih dahulu</string>
+    <string name="bin_not_selected_yet">Anda belum memilih rak pengambilan barang</string>
+    <string name="dest_not_selected_yet">Anda belum memilih docking tempat menaruh barang</string>
+    <string name="ask_finish_task">Selaesaikan tugas sekarang ?</string>
+    <string name="ask_start_task">Mulai proses picking sekarang ?</string>
+    <string name="ask_to_update_pallet_number">Yakin nomor pallet {0} sudah benar ?</string>
+    <string name="info_start_task">Anda yakin untuk memulai sekarang ?</string>
+    <string name="info_must_start_task">Anda harus memulai proses ambil barang terlebih dahulu</string>
+    <string name="info_must_input_pallet">Anda harus input pallet untuk memulai</string>
+    <string name="info_no_more_picking_source_data">Sekarang Anda akan melakukan proses taruh barang ke lokasi tujuan</string>
+    <string name="info_no_more_picking_dest_data_and_finish">Tugas ambil barang sudah selesai</string>
+    <string name="input_qty_cannot_larger_than">Jumlah item yang diinput tidak boleh lebih besar dari </string>
+    <string name="allowed_qty_to_input">Jumlah barang yang boleh diinput saat ini : </string>
+    <string name="input_qty_has_maximum_amount">Tidak dapat memasukkan jumlah barang lagi karena total jumlah barang yang diinput sebelumnya sudah sama dengan total barang yang diambil</string>
+    <string name="source_bin_not_match">Lokasi rak barang tidak sesuai</string>
+    <string name="source_bin_match">Lokasi rak sesuai</string>
+    <string name="destination_bin_match">Lokasi menaruh barang sesuai</string>
+    <string name="destination_bin_not_match">Lokasi menaruh barang tidak sesuai</string>
+    <string name="input_qty">Input Jumlah</string>
+    <string name="update_pallet_number">Update Nomor Pallet</string>
+    <string name="start_picking">Memulai Picking</string>
+    <string name="start_picking_process">Memulai Proses Picking…</string>
+    <string name="saving_data">Menyimpan data…</string>
+    <string name="finish_picking_process">Menyelesaikan Proses Picking…</string>
+    <string name="update_pallet_number_process">Meng-Update Nomor Pallet…</string>
+    <string name="info">Info</string>
+    <string name="error_cannot_input_empty">Nomor Pallet Harus Diisi</string>
+
+    <string name="source_location">Lokasi Sumber</string>
+    <string name="source_destination">Lokasi Tujuan</string>
+    <string name="pallet_no">No. Pallet</string>
+    <string name="total_pallet">Total Pallet </string>
+    <string name="total_pallet_2">Total Pallet </string>
+    <string name="dest_loc">Lokasi Tujuan</string>
+    <string name="pallet_conversion">Conversi Pallet </string>
+    <string name="pallet_qty">Qty Pallet </string>
+
+
+    <string name="wrong_source">Lokasi sumber [{0}] salah.</string>
+    <string name="wrong_pallet">Nomor Pallet [{0}] salah.</string>
+    <string name="wrong_destination">Lokasi tujuan [{0}] salah.</string>
+    <string name="notif_not_started_task">Ada {0} tugas yang belum dimulai.</string>
+    <string name="total_reassigned_operators">Total Reassigned Operators : {0}</string>
+    <string name="input_pallet_no">Masukkan Nomor Pallet</string>
+
+    ///Move To Docking
+    <string name="title_moving_to_docking">Pindahkan Ke Docking</string>
+    <string name="ask_start_moving_now_title">Mulai Proses</string>
+    <string name="ask_start_moving_now_body">Mulai Moving To Docking Sekarang?</string>
+    <string name="ask_start_move_to_docking_task">Anda mempunyai tugas Move To Docking.\n\nMulai sekarang ?</string>
+    <string name="ask_cancel_moving_now_title">Membatalkan Proses</string>
+    <string name="ask_cancel_moving_now_body">Batalkan Proses Ini Dan Kembali Ke Proses Loading?</string>
+    <string name="input_pallet_number_manually">Masukkan Nomor {0} Secara Manual</string>
+    <string name="update_pallet_number_manually">Masukkan Nomor Pallet Secara Manual</string>
+    <string name="error_cannot_input_text_empty">Nomor Pallet Tidak Boleh Kosong</string>
+    <string name="toast_pallet_number_updated">Nomor Pallet Berhasil Diupdate</string>
+    <string name="progress_processing_update_pallet">Memproses Update Pallet Baru</string>
+    <string name="progress_content_creating_moving_task">Memproses Moving Task</string>
+    <string name="progress_content_cancel_moving_task">Membatalkan Moving Task</string>
+    <string name="progress_content_start_moving_task">Memulai Moving Task</string>
+    <string name="progress_content_finish_moving_task">Mengakhiri Moving Task</string>
+    <string name="warning_must_complete_the_task">Anda harus menyelesaikan ini terlebih dahulu !</string>
+    <string name="error_pallet_not_scanned_yet">Pallet belum dipilih !\nHarap pilih pallet yang sesuai sebelum melanjutkan.</string>
+    <string name="error_product_not_found_by_selected_pallet">Produk tidak ditemukan untuk nomor pallet: </string>
+    <string name="btnStart_docking">Mulai Proses Docking</string>
+    <string name="btnFinish_and_back_to_loading">Selesai dan Kembali ke Proses Loading</string>
+    <string name="btnContinue_docking">Selesai dan Lanjut Pindahkan ke Docking</string>
+    <string name="btnCancel_and_back_to_loading">Batalkan dan Kembali ke Proses Loading</string>
+    <string name="info_moving_task_declined">Moving To Docking tidak dapat diproses</string>
+    <string name="btnReport_moving">Report</string>
+
+
+    ///Move To Docking Detail
+    <string name="progress_content_load">Menampilkan Data …</string>
+    <string name="error_destination_docking_not_match">Lokasi Docking Tidak Sesuai</string>
+    <string name="ask_finish_moving_now_title">Selesai Proses</string>
+    <string name="ask_finish_moving_and_back_to_docking_body">Yakin untuk menyelesaikan proses ini ?</string>
+    <string name="ask_finish_moving_now_body">Selesaikan Tugas Dan Kembali Ke Loading ?</string>
+    <string name="progress_finish_moving_task">Menyelesaikan Tugas …</string>
+    <string name="error_dest_docking_cannot_empty">Id Docking Tujuan Tidak Boleh Kosong</string>
+
+    //Replenish
+    <string name="progress_get_replenishData">Mengambil Data …</string>
+    <string name="progress_start_replenishData">Memulai Proses…</string>
+    <string name="progress_finish_replenishData">Menyelesaikan Proses…</string>
+    <string name="ask_to_start_replenish">Anda mempunyai tugas Melengkapi Rak Kosong.\n\nMulai sekarang ?</string>
+    <string name="ask_to_move_to_dest">Pindah ke tujuan sekarang ?</string>
+    <string name="ask_to_finish_replenish">Selesaikan proses sekarang ?</string>
+    <string name="dest_id">Lokasi Tujuan</string>
+    <string name="source_id">Lokasi Awal</string>
+    <string name="pallet_id">Pallet</string>
+    <string name="pallet_id_is_not_match">Id Pallet tidak sesuai</string>
+    <string name="dest_id_is_not_match">Id Tujuan tidak sesuai</string>
+    <string name="source_id_is_not_match">Id Sumber tidak sesuai</string>
+    <string name="typeCode_is_not_match">TypeCode tidak sesuai !</string>
+
+    <string name="title_replenish_start">Memulai Proses Replenish</string>
+    <string name="title_replenish_finish">Menyelesaikan Proses Replenish</string>
+    <string name="title_moving_start">Memulai Proses Moving</string>
+    <string name="title_moving_finish">Menyelesaikan Proses Moving</string>
+
+    <string name="title_re_warehousing_start">Memulai Proses Re-Warehousing</string>
+    <string name="title_re_warehousing_finish">Menyelesaikan Proses Re-Warehousing</string>
+
+    //Destruction
+    <string name="ask_start_destruction_task">Anda mempunyai tugas Memusnahkan Barang.\n\nMulai sekarang ?</string>
+    <string name="progress_get_destructionData">Mengambil Data …</string>
+    <string name="ask_to_start_destruction">Anda mempunyai tugas Memusnahkan Barang.\n\nMulai sekarang ?</string>
+    <string name="title_destruction_start">Memulai Proses Pemusnahan Barang</string>
+    <string name="title_destruction_finish">Menyelesaikan Proses Pemusnahan Barang</string>
+
+    //Mutation
+    <string name="ask_start_mutation_task">Anda mempunyai tugas Mutasi Barang.\n\nMulai sekarang ?</string>
+    <string name="progress_get_mutationData">Mengambil Data …</string>
+    <string name="ask_to_start_mutation">Anda mempunyai tugas Mutasi Barang.\n\nMulai sekarang ?</string>
+    <string name="title_mutation_start">Memulai Proses Mutasi</string>
+    <string name="title_mutation_finish">Menyelesaikan Proses Mutasi</string>
+
+    //Banded
+    <string name="colon">:</string>
+    <string name="toolbar_banded">Input Checker Result</string>
+    <string name="progress_get_banded">Mengambil Data …</string>
+    <string name="ask_to_start_banded">Anda mempunyai tugas Banded Barang.\n\nMulai sekarang ?</string>
+    <string name="title_banded_start">Memulai Proses Banded</string>
+    <string name="title_banded_finish">Menyelesaikan Proses Banded</string>
+    <string name="banded_header">Banded</string>
+    <string name="banded_id">Banded Id</string>
+    <string name="start_banded">Start Banded</string>
+    <string name="ask_finish_banded_task">Selaesaikan tugas sekarang ?</string>
+    <string name="ask_start_banded_task">Mulai proses banded sekarang ?</string>
+    <string name="qty_banded">Qty</string>
+    <string name="qty_needed">Qty Needed</string>
+    <string name="qty_remaining">Qty Remaining</string>
+    <string name="btnInfo_banded">Info</string>
+    <string name="btnInput_banded">Input</string>
+    <string name="add_banded">Tambah</string>
+    <string name="selesai_banded">Selesai</string>
+    <string name="banded_product">Banded Product</string>
+
+
+    //Warehouse Problem
+    <string name="input_bind_id_warehouse_problem">Bin Id</string>
+    <string name="input_pallet_no_warehouse_problem">Pallet No</string>
+    <string name="input_product_id_warehouse_problem">Product Id</string>
+    <string name="input_operator_id_warehouse_problem">Operator Id</string>
+    <string name="input_operator_name_warehouse_problem">Operator Name</string>
+`   <string name="receiving_warehouse_title">Report Warehouse Problem</string>
+    <string name="warning_data_should_be_filled_warehouse_problem">Harus diisi</string>
+    <string name="warehouse_problem_saving">Menyimpan data masalah gudang ...</string>
+    <string name="warehouse_problem_succesfully_saved">Data masalah gudang telah disimpan</string>
+
+    //Moving Manual Mutation
+    <string name="input_product_id_manual_mutation">Product ID</string>
+    <string name="input_qty_manual_mutation">Qty</string>
+    <string name="input_source_pallet_manual_mutation">Source Pallet</string>
+    <string name="input_source_bin_manual_mutation">Source Bin</string>
+    <string name="input_destination_pallet_manual_mutation">Destination Pallet</string>
+    <string name="input_destination_bin_manual_mutation">Destination Bin</string>
+    <string name="title_manual_mutation_start">Memulai Order Manual Mutation</string>
+    <string name="progress_get_mutation_manual_data">Mengambil Data …</string>
+    <string name="ask_to_start_mutation_manual">Anda mempunyai tugas Mutasi Internal Manual.\n\nMulai sekarang ?</string>
+    <string name="source_pallete_is_not_match">Source Pallet tidak sesuai</string>
+    <string name="dest_pallete_is_not_match">Destination Pallet tidak sesuai</string>
+    <string name="manual_mutation_mtypeCode_is_not_match">TypeCode tidak sesuai !</string>
+    <string name="ask_to_finish_manual_mutation">Selesaikan proses sekarang ?</string>
+    <string name="progress_finish_manual_mutation">Menyelesaikan Proses…</string>
+    <string name="manual_mutation_succesfully_saved">Data manual mutation berhasil disimpan</string>
+
+    // Manual Stock Counting
+
+    <string name="ask_to_start_stock_counting_order_manual">Anda mempunyai tugas StockCountingOrderManual.\n\nMulai sekarang ?</string>
+    <string name="input_bin_id_manual_order_stockcounting">Bin ID</string>
+    <string name="input_operator_id_manual_order_stockcounting">Operator ID</string>
+    <string name="receiving_stockcounting_order_item_title">Stockcounting Order Item Manual</string>
+    <string name="receiving_stockcounting_order_title">Stockcounting Order  Manual</string>
+    <string name="warning_data_should_be_filled_stockcountingorder">Harus diisi</string>
+    <string name="stockcounting_order_item_saving">Menyimpan data stockcounting order item ...</string>
+    <string name="stockcounting_order_item_succesfully_saved">Data stockcounting order item telah disimpan</string>
+    <string name="btncreatestockcountingorder">Create stockcounting order </string>
+    <string name="stockcounting_order_item_list">Menyiapkan List stockcounting order </string>
+
+
+
+
+</resources>

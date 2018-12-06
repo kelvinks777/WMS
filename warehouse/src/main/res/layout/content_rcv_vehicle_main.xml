@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/secondaryBackground"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".security.ReceivingVehicleActivity"
+    tools:showIn="@layout/app_bar_rcv_vehicle_main">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/parentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        tools:context="com.gin.wms.warehouse.security.ReceivingVehicleActivity">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardViewBarcode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="5dp"
+            app:cardElevation="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="0.3"
+                    android:gravity="center_vertical|end"
+                    android:text="@string/police_no"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="@dimen/font_subheading" />
+
+                <EditText
+                    android:id="@+id/txtPoliceNumber"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:gravity="start"
+                    android:hint="@string/prefix_police_number"
+                    android:inputType="textCapCharacters"
+                    android:maxLength="2"
+                    android:textSize="@dimen/font_subheading"
+                    android:textColor="@color/colorSecondaryText"
+                    android:nextFocusDown="@id/txtPoliceNumber2" />
+
+                <EditText
+                    android:id="@+id/txtPoliceNumber2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:hint="nomor"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:textSize="@dimen/font_subheading"
+                    android:textColor="@color/colorSecondaryText"
+                    android:nextFocusDown="@id/txtPoliceNumber3" />
+
+                <EditText
+                    android:id="@+id/txtPoliceNumber3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:hint="@string/suffix_police_number"
+                    android:inputType="textCapCharacters"
+                    android:maxLength="3"
+                    android:textSize="@dimen/font_subheading"
+                    android:nextFocusDown="@id/txtDriverName"
+                    android:textColor="@color/colorSecondaryText" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardProduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/cardViewBarcode"
+            android:layout_marginTop="5dp"
+            app:cardElevation="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="0.3"
+                    android:gravity="center_vertical|end"
+                    android:text="@string/driver_name"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="@dimen/font_subheading" />
+
+                <EditText
+                    android:id="@+id/txtDriverName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:gravity="start"
+                    android:hint="@string/insert_driver_name"
+                    android:maxLength="50"
+                    android:textSize="@dimen/font_subheading"
+                    android:textColor="@color/colorSecondaryText" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <LinearLayout
+            android:id="@+id/checkPoliceNumberLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cardProduct"
+            android:layout_marginTop="5dp"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"/>
+
+                <Button
+                    android:id="@+id/btnPoliceNumberCheck"
+                    style="@style/CommonButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:padding="15dp"
+                    android:text="@string/check_police_number"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/font_subheading" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/descriptionLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/checkPoliceNumberLayout"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardVehicleType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight="0.3"
+                        android:gravity="center_vertical|end"
+                        android:text="@string/type"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/font_subheading"/>
+
+                    <TextView
+                        android:id="@+id/txtVehicleType"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="0.6"
+                        android:textSize="@dimen/font_subheading"
+                        android:gravity="start"
+                        android:textColor="@color/colorSecondaryText"
+                        tools:text="Truk Engkel" />
+
+                    <ImageButton
+                        android:id="@+id/imgBtnVehicleType"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.1"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/arrow_down"
+                        android:tint="@color/colorPrimary" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardVehicleCategory1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight="0.3"
+                        android:gravity="center_vertical|end"
+                        android:text="@string/category_1"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/font_subheading" />
+
+                    <TextView
+                        android:id="@+id/txtVehicleCategory1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="0.6"
+                        android:textSize="@dimen/font_subheading"
+                        android:gravity="start"
+                        android:textColor="@color/colorSecondaryText"
+                        tools:text="Truk Engkel" />
+
+                    <ImageButton
+                        android:id="@+id/imgBtnVehicleCategory1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.1"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/arrow_down"
+                        android:tint="@color/colorPrimary" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardVehicleCategory2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight="0.3"
+                        android:gravity="center_vertical|end"
+                        android:text="@string/category_2"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/font_subheading" />
+
+                    <TextView
+                        android:id="@+id/txtVehicleCategory2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="0.6"
+                        android:textSize="@dimen/font_subheading"
+                        android:gravity="start"
+                        android:textColor="@color/colorSecondaryText"
+                        tools:text="Truk Engkel" />
+
+                    <ImageButton
+                        android:id="@+id/imgBtnVehicleCategory2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.1"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/arrow_down"
+                        android:tint="@color/colorPrimary" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardVehicleReceivingNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/descriptionLayout"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            app:cardElevation="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorYellow">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginStart="5dp"
+                    android:text="@string/receiving_vehicle_note"
+                    android:textColor="@color/colorSolidOnTheLight" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <Button
+            android:id="@+id/btnProcess"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            style="@style/CommonButton"
+            android:padding="20dp"
+            android:text="@string/btnProcess"
+            android:textColor="@android:color/white" />
+
+        <ProgressBar
+            android:id="@+id/spinnerReceivingVehicle"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btnProcess"
+            android:layout_centerHorizontal="true"
+            android:indeterminateTint="@color/colorPrimary"/>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

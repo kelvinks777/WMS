@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.gin.wms.warehouse">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:name=".base.WarehouseAppContext"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebookAppid" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            tools:replace="android:theme" />
+
+        <service android:name=".service.CountdownService" />
+        <service android:name=".service.WarehouseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".login.LoginActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="b9b4757941ff0ae08d404843befdae3560a6cf15" />
+
+        <activity
+            android:name=".operator.PutAway.PutawayTaskActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SwitcherActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".checker.CheckerMainActivity"
+            android:label="@string/title_activity_checker_main"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".checker.CheckerTaskDetailActivity"
+            android:label="@string/title_activity_checker_task_detail"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".checker.HigherPriorityTaskActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".checker.PutawayProductActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".checker.TaskActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".checker.OperatorActivity"
+            android:label="@string/title_activity_operator"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".checker.HigherPriorityTaskDetailActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".checker.ReassignTaskActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".operator.PutAway.PutawayActivity" />
+        <activity
+            android:name=".operator.ProductListActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".component.CustomScannerActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".operator.TaskSwitcherActivity"
+            android:label="@string/title_activity_switcher"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".operator.Docking.DockingTaskActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".security.ReceivingVehicleActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".operator.PutAway.PutawayTask2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".operator.PutAway.PutawayTaskDetailActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".operator.PutAway.PutawayTaskFinishActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".operator.PutAway.PutawayBadProductsTaskDetailActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".operator.PutAway.PutawayBadProductsTaskFinishActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".checker.CheckResultInputActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".checker.CheckResultItemInputActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".operator.Picking.PickingTaskActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".operator.Docking.MoveToDockingActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".operator.Docking.MoveToDockingDetailActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".operator.Moving.MovingStartActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".operator.Moving.MovingFinishActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".operator.Docking.MoveToDockingInputPalletActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".operator.Banded.ProcessingTaskCheckActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".operator.Banded.ProcessingTaskResultInputActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".operator.Moving.ProductListForMutationOrderActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".warehouse_problem.WarehouseProblemActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".operator.Order.ManualMutationActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".operator.Counting.StockCountingOrderActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".operator.Counting.StockcountingOrderItemListActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>

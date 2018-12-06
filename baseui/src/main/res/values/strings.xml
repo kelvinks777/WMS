@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Base UI</string>
+    <string name="activitySharedPreferenceXML_getButton">Get Button</string>
+    <string name="activitySharedPreferenceXML_setButton">Set Button</string>
+    <string name="activitySharedPreferenceXML_googleToken">Google Token</string>
+    <string name="activitySharedPreferenceXML_googleRegistrationID">Google Registration ID</string>
+    <string name="activitySharedPreferenceXML_authorizationID">Authorization ID</string>
+    <string name="activitySharedPreferenceXML_userID">User ID</string>
+    <string name="activitySharedPreferenceXML_taskOptions">Pilihan Task</string>
+    <string name="activitySharedPreferenceXML_serverClientId">461026990915-nnn905ej8bjarmvk30fplvtgbl3g15ll.apps.googleusercontent.com</string>
+    <string name="facebook_app_id">982915908429632</string>
+    <string name="firebaseSenderID">461026990915</string>
+    <string name="login_signin_loading">Sedang memproses data registrasi</string>
+
+    <!-- Custom ImageView-->
+    <string name="customImageView_not_supported_fit_start">TouchImageView belum mendukung untuk ScaleType: FIT_START or FIT_END</string>
+    <string name="customImageView_not_supported_fit_xy">getZoomedRect() not supported with FIT_XY</string>
+    <string name="close_snackbar">Tutup</string>
+    <string name="gagal_koneksi">Koneksi ke server Ngemart terputus, mohon periksa koneksi internet Anda.</string>
+
+    <string name="login_msg_invalid_password">Password dan email tidak cocok.</string>
+    <string name="login_msg_email_not_verified">Anda belum melakukan verifikasi email.</string>
+    <string name="login_msg_invalid_email">Format email yang Anda masukan salah.</string>
+    <string name="login_msg_email_not_registered">Email tidak terdaftar.</string>
+    <string name="login_msg_email_was_registered">Email sudah terdaftar.</string>
+    <string name="login_msg_weak_password">Password harus lebih dari 6 karakter.</string>
+    <string name="error_title">Oops!</string>
+    <string name="positive_ok">OK</string>
+    <string name="positive_yes">YA</string>
+    <string name="negative_no">Tidak</string>
+    <string name="detail_error_title">Detil Kesalahan</string>
+    <string name="detail_button_text">DETAIL</string>
+    <string name="positive_update">Update</string>
+    <string name="icon_image">Icon_image</string>
+</resources>

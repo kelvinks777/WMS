@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainBackground"
+    tools:context=".operator.Moving.MovingFinishActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbarReplenishFinish"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/mainBackground"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:id="@+id/palletNumberLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/cardview_light_background"
+                app:cardCornerRadius="0dp"
+                app:cardElevation="2dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.25"
+                        android:gravity="end|center"
+                        android:text="No. Pallet"
+                        android:textAlignment="gravity"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/font_subheading" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.05"
+                        android:gravity="center"
+                        android:text=""
+                        android:textAlignment="gravity"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/font_subheading" />
+
+                    <TextView
+                        android:id="@+id/tvPalletNo"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.55"
+                        android:gravity="center_vertical"
+                        android:textAlignment="gravity"
+                        android:textColor="@color/colorSecondaryText"
+                        android:textSize="@dimen/font_subheading" />
+
+                    <ImageButton
+                        android:id="@+id/btnScanPallet"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="0.15"
+                        android:backgroundTint="@color/colorClickableRipple"
+                        android:src="@drawable/ic_qrcode_48_black"
+                        android:tint="@android:color/white" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sourceNumberLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/palletNumberLayout">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/cardview_light_background"
+                app:cardCornerRadius="0dp"
+                app:cardElevation="2dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.25"
+                        android:gravity="end|center"
+                        android:text="Kode Tujuan"
+                        android:textAlignment="gravity"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/font_subheading" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.05"
+                        android:gravity="center"
+                        android:text=""
+                        android:textAlignment="gravity"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/font_subheading" />
+
+                    <TextView
+                        android:id="@+id/tvDestNo"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.55"
+                        android:gravity="center_vertical"
+                        android:textAlignment="gravity"
+                        android:textColor="@color/colorSecondaryText"
+                        android:textSize="@dimen/font_subheading" />
+
+                    <ImageButton
+                        android:id="@+id/btnScanDest"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="0.15"
+                        android:backgroundTint="@color/colorClickableRipple"
+                        android:src="@drawable/ic_qrcode_48_black"
+                        android:tint="@android:color/white" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btnProcessFinishReplenishLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            android:weightSum="3"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <Button
+                android:id="@+id/btnTakeNewPallet"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                style="@style/CommonButton"
+                android:padding="20dp"
+                android:layout_weight="1"
+                android:text="@string/btnTakePallet"
+                android:textAllCaps="true"
+                android:visibility="gone"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/font_button"/>
+
+            <Button
+                android:id="@+id/btnReport"
+                style="@style/CommonButton"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:padding="20dp"
+                android:layout_weight="1"
+                android:text="@string/btnReport"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/font_button" />
+
+            <Button
+                android:id="@+id/btnFinishReplenish"
+                style="@style/CommonButton"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:padding="20dp"
+                android:layout_weight="1"
+                android:text="@string/btnFinish"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/font_button" />
+        </LinearLayout>
+
+        <com.gin.ngemart.baseui.adapter.NgemartRecyclerView
+            android:id="@+id/rvFinishReplenish"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorTransparentWhite"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            app:layout_constraintBottom_toTopOf="@+id/btnProcessFinishReplenishLayout"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sourceNumberLayout"
+            app:layout_constraintVertical_bias="1.0" />
+    </android.support.constraint.ConstraintLayout>
+</android.support.design.widget.CoordinatorLayout>
